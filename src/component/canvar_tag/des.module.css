@@ -1,12 +1,12 @@
 .main
 {
-    background-color:red !important;
-    height: 90%;
-    width: 90%;
+    
+    height: 100%;
+    width: 100%;
 }
 .canva
 {
-    background-color: aqua;
+    
     border: 1px solid black;
     border-radius: 5px;
 }

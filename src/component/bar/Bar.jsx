@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import css from './bar.module.css'
 import {AiFillDownCircle,AiFillUpCircle} from "react-icons/ai";
 
-const Bar=({fun})=>{
+const Bar=({fun,des,d})=>{
     
     const [arro,setarro]=useState(true);
 
@@ -71,7 +71,7 @@ const Bar=({fun})=>{
         <>
         <div className={css.main}>
 
-            <div  className={css.drop_box}> Select background colour <div onClick={()=>{setarro((p)=>!p)}}>{ arro?<AiFillDownCircle/>:<AiFillUpCircle/>  }</div> </div> 
+            <div id={"mou123"}  onMouseLeave={()=>{des({h:25,w:25,bg:"#A020F0",bo:1})}} onMouseEnter={()=>{des({h:120,w:120,bg:"rgba(0, 0, 0, 0.437)",bo:1})}}  className={css.drop_box}> Select background colour <div onClick={()=>{setarro((p)=>!p)}}>{ arro?<AiFillDownCircle/>:<AiFillUpCircle/>  }</div> </div> 
             {!arro?<div className={css.cont}>
                 
                     {
